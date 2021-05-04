@@ -39,7 +39,7 @@ with open(electiondata_csv, newline='') as csvfile:
             otooley_votes += 1
             
     # Calculate Percentage Of Votes Each Candidate Won
-    kahn_percent = khan_votes / total_votes
+    khan_percent = khan_votes / total_votes
     correy_percent = correy_votes / total_votes
     li_percent = li_votes / total_votes
     otooley_percent = otooley_votes / total_votes
@@ -61,7 +61,7 @@ print(f"Election Results")
 print(f"---------------------------")
 print(f"Total Votes: {total_votes}")
 print(f"---------------------------")
-print(f"Kahn: {kahn_percent:.3%} ({khan_votes})")
+print(f"Khan: {khan_percent:.3%} ({khan_votes})")
 print(f"Correy: {correy_percent:.3%} ({correy_votes})")
 print(f"Li: {li_percent:.3%} ({li_votes})")
 print(f"O'Tooley: {otooley_percent:.3%} ({otooley_votes})")
@@ -80,7 +80,7 @@ with open(output_file, 'w',) as txtfile:
     txtfile.write(f"---------------------------\n")
     txtfile.write(f"Total Votes: {total_votes}\n")
     txtfile.write(f"---------------------------\n")
-    txtfile.write(f"Kahn: {kahn_percent:.3%} ({khan_votes})\n")
+    txtfile.write(f"Khan: {khan_percent:.3%} ({khan_votes})\n")
     txtfile.write(f"Correy: {correy_percent:.3%} ({correy_votes})\n")
     txtfile.write(f"Li: {li_percent:.3%} ({li_votes})\n")
     txtfile.write(f"O'Tooley: {otooley_percent:.3%} ({otooley_votes})\n")
